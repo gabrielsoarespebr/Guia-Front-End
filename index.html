@@ -16,26 +16,66 @@
     <h1>Guia front-end: HTML, CSS, JS</h1>
     <cite>Autor: Gabriel Soares <a href="https://www.linkedin.com/in/gabrielsoarespebr/" target="_blank">(Linkedin)</a>
         <a href="https://github.com/gabrielsoarespebr" target="_blank">(GitHub)</a></cite>
-    <p>Tags básicas do HTML: &lt;html&gt;,&lt;head&gt;,&lt;body&gt;</p>
+
+    <p>Estrutura básica do HTML:</p>
+
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+
+    <dl>Traduzindo:
+        <dt>!DOCTYPE html</dt>
+        <dd>Informa ao navegador que o arquivo é do tipo HTML.</dd>
+        <dt>html</dt>
+        <dd>Tag que serve de escopo do código.</dd>
+        <dt>head</dt>
+        <dd>Tag que contém elementos não visíveis ao usuário (metadados).</dd>
+        <dt>body</dt>
+        <dd>Tag que contém elementos visíveis ao usuário.</dd>
+
+        <p>Tags básicas do HTML: &lt;html&gt;,&lt;head&gt;,&lt;body&gt;</p>
+    </dl>
 
     <hr>
     <h3>Listas</h3>
-    <div class="tres">
-        <div id="tres 1">
+    <div class="grid1">
+        <div>
             <ul>Lista não ordenada (<ins>u</ins>nordered <ins>l</ins>ist: &lt;ul&gt;&lt;/ul&gt;)
                 <li>Item da lista (<ins>l</ins>ist <ins>i</ins>tem: &lt;li&gt;&lt;/li&gt;)</li>
                 <li>Item da lista (<ins>l</ins>ist <ins>i</ins>tem: &lt;li&gt;&lt;/li&gt;)</li>
                 <li>Item da lista (<ins>l</ins>ist <ins>i</ins>tem: &lt;li&gt;&lt;/li&gt;)</li>
             </ul>
         </div>
-        <div id="tres 2">
+        <div>
+            <p>Exemplo:</p>
+            <ul>Comidas favoritas:
+                <li>Brownie</li>
+                <li>Escondidinho de charque</li>
+                <li>Pastel</li>
+            </ul>
+        </div>
+        <div>
             <ol>Lista ordenada (<ins>o</ins>rdered <ins>l</ins>ist: &lt;ol&gt;&lt;/ol&gt;)
                 <li>Item da lista (<ins>l</ins>ist <ins>i</ins>tem: &lt;li&gt;&lt;/li&gt;)</li>
                 <li>Item da lista (<ins>l</ins>ist <ins>i</ins>tem: &lt;li&gt;&lt;/li&gt;)</li>
                 <li>Item da lista (<ins>l</ins>ist <ins>i</ins>tem: &lt;li&gt;&lt;/li&gt;)</li>
             </ol>
         </div>
-        <div id="tres 3">
+        <div>
+            <p>Exemplo:</p>
+            <ol>Top 3 séries:
+                <li>Black Mirror</li>
+                <li>Sex Education</li>
+                <li>Spartacus</li>
+            </ol>
+        </div>
+        <div>
             <dl><ins>L</ins>ista de <ins>d</ins>efinição (&lt;dl&gt;&lt;/dl&gt;)
                 <dt><ins>T</ins>ermo (&lt;dt&gt;&lt;/dt&gt;)</dt>
                 <dd><ins>D</ins>efinição (&lt;dl&gt;&lt;/dd&gt;)</dd>
@@ -47,6 +87,51 @@
         </div>
     </div>
     <hr>
+    <h3>Tabelas</h3>
+    <table>
+        <tr>
+            <th colspan="10">Eleições 2022 - Primeiro turno</th>
+        </tr>
+        <tr>
+            <th colspan="2">Sudeste</th>
+            <th colspan="2">Nordeste</th>
+            <th colspan="2">Sul</th>
+            <th colspan="2">Centro Oeste</th>
+            <th colspan="2">Norte</th>
+        </tr>
+        <tr>
+            <th>Lula</th>
+            <th>Bolsonaro</th>
+            <th>Lula</th>
+            <th>Bolsonaro</th>
+            <th>Lula</th>
+            <th>Bolsonaro</th>
+            <th>Lula</th>
+            <th>Bolsonaro</th>
+            <th>Lula</th>
+            <th>Bolsonaro</th>
+        </tr>
+        <tr>
+            <td>21.034.645</td>
+            <td>23.468.599</td>
+            <td>21.691.381</td>
+            <td>8.775.702</td>
+            <td>6.449.223</td>
+            <td>9.567.964</td>
+            <td>3.326.328</td>
+            <td>4.727.672</td>
+            <td>4.542.329</td>
+            <td>4.393.109</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Imagens</h3>
+    <img src="https://images.france.fr/zeaejvyq9bhj/25W1wmn9yRjMCXlQlE4zZE/2e1cb99db847dbfc6633b1974e8c5718/expo_napol__on_bis.JPG" alt="Pintura de Napoleão Bonaparte" class="napoleao">
+
+    <figure>
+        <img src="https://i.pinimg.com/originals/0e/a2/48/0ea2487a31130b10a7e664f4b0e115ef.jpg" alt="Pintura de Napoleão Bonaparte" class="napoleao">
+        <figcaption>Napoleon Bonaparte at the Royal Military School</figcaption>
+    </figure>
 
 </body>
 

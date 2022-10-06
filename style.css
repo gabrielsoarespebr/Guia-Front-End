@@ -9,7 +9,15 @@ h1, cite{
     text-align: center;
 }
 
-.tres{
+.grid1{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+.napoleao{
+    width: 40vw;
 }
