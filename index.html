@@ -126,12 +126,48 @@
     </table>
     <hr>
     <h3>Imagens</h3>
-    <img src="https://images.france.fr/zeaejvyq9bhj/25W1wmn9yRjMCXlQlE4zZE/2e1cb99db847dbfc6633b1974e8c5718/expo_napol__on_bis.JPG" alt="Pintura de Napoleão Bonaparte" class="napoleao">
+    <img src="https://images.france.fr/zeaejvyq9bhj/25W1wmn9yRjMCXlQlE4zZE/2e1cb99db847dbfc6633b1974e8c5718/expo_napol__on_bis.JPG"
+        alt="Pintura de Napoleão Bonaparte" class="napoleao">
 
     <figure>
-        <img src="https://i.pinimg.com/originals/0e/a2/48/0ea2487a31130b10a7e664f4b0e115ef.jpg" alt="Pintura de Napoleão Bonaparte" class="napoleao">
+        <img src="https://i.pinimg.com/originals/0e/a2/48/0ea2487a31130b10a7e664f4b0e115ef.jpg"
+            alt="Pintura de Napoleão Bonaparte" class="napoleao">
         <figcaption>Napoleon Bonaparte at the Royal Military School</figcaption>
     </figure>
+    <hr>
+    <h3>Formulário</h3>
+    <form action="#" method="#">
+        <p>Cadastro</p>
+        <div>
+            <label for="name">Nome</label><input id="name" type="text" placeholder="Digite seu nome" pattern="[A-Za-z]+"
+                title="Aceita somente letras" required>
+            <label for="surname">Sobrenome</label><input id="surname" type="text" placeholder="Digite seu sobrenome"
+                pattern="[A-Za-z]+" title="Aceita somente letras" required>
+        </div>
+        <div>
+            <label for="email">E-mail</label><input id="email" type="email" placeholder="Digite seu e-mail" required>
+            <label for="password">Senha</label><input id="password" type="password" placeholder="Digite sua senha"
+                required>
+        </div>
+<div>
+        <label for="howdoyoumeet">Como você conheceu a plataforma?</label>
+        <select name="howdoyoumeet" id="howdoyoumeet">
+            <option value="google">Google</option>
+            <option value="youtube">Youtube</option>
+            <option value="email">E-mail</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="people">Indicação de amigos/familiares</option>
+            <option value="other">Outro meio</option>
+        </select>
+    </div>
+    <div>
+        <label for="description">Deseja adicionar uma breve descrição?</label><br>
+        <textarea name="description" id="description" cols="30" rows="4" placeholder="Digite sua descrição"></textarea>
+    </div>
+        <input type="submit" value="Cadastrar">
+    </form>
+
 
 </body>
 

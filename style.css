@@ -21,3 +21,7 @@ table, th, td{
 .napoleao{
     width: 40vw;
 }
+
+form{
+    text-align: center;
+}
