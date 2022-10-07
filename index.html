@@ -17,9 +17,11 @@
     <cite>Autor: Gabriel Soares <a href="https://www.linkedin.com/in/gabrielsoarespebr/" target="_blank">(Linkedin)</a>
         <a href="https://github.com/gabrielsoarespebr" target="_blank">(GitHub)</a></cite>
 
-    <p>Estrutura básica do HTML:</p>
+    <div class="grid1">
+        <div>
+            <p>Estrutura básica do HTML:</p>
 
-    <pre>
+            <pre>
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
             &lt;head&gt;
@@ -27,20 +29,25 @@
             &lt;body&gt;
             &lt;/body&gt;
         &lt;/html&gt;
-    </pre>
+        </pre>
+        </div>
 
-    <dl>Traduzindo:
-        <dt>!DOCTYPE html</dt>
-        <dd>Informa ao navegador que o arquivo é do tipo HTML.</dd>
-        <dt>html</dt>
-        <dd>Tag que serve de escopo do código.</dd>
-        <dt>head</dt>
-        <dd>Tag que contém elementos não visíveis ao usuário (metadados).</dd>
-        <dt>body</dt>
-        <dd>Tag que contém elementos visíveis ao usuário.</dd>
+        <div class="blocodenotas">
+            <dl>
+                <p class="titulocentralizado">Nota:</p>
+                <dt class="bold">!DOCTYPE html</dt>
+                <dd>Informa ao navegador que o arquivo é do tipo HTML.</dd>
+                <dt class="bold">html</dt>
+                <dd>Tag que serve de escopo do código.</dd>
+                <dt class="bold">head</dt>
+                <dd>Tag que contém elementos não visíveis ao usuário (metadados).</dd>
+                <dt class="bold">body</dt>
+                <dd>Tag que contém elementos visíveis ao usuário.</dd>
 
-        <p>Tags básicas do HTML: &lt;html&gt;,&lt;head&gt;,&lt;body&gt;</p>
-    </dl>
+                <p>Tags básicas do HTML: &lt;html&gt;,&lt;head&gt;,&lt;body&gt;</p>
+            </dl>
+        </div>
+    </div>
 
     <hr>
     <h3>Listas</h3>
@@ -141,20 +148,33 @@
             <legend>Cadastro</legend>
 
             <div>
-                <label for="name">Nome</label><input id="name" type="text" placeholder="Digite seu nome"
+                <label for="course">Escolha uma trilha</label>
+                <div>
+                    <input type="radio" name="course" id="course" value="frontend">Front-end
+                    <input type="radio" name="course" id="course" value="backend">Back-end
+                    <input type="radio" name="course" id="course" value="fullstack">Full Stack
+                </div>
+            </div>
+            
+            <div>
+                <label for="name">Nome </label><input id="name" type="text" placeholder="Digite seu nome"
                     pattern="[A-Za-z]+" title="Aceita somente letras" required>
-                <label for="surname">Sobrenome</label><input id="surname" type="text" placeholder="Digite seu sobrenome"
-                    pattern="[A-Za-z]+" title="Aceita somente letras" required>
+                <label for="surname">Sobrenome </label><input id="surname" type="text"
+                    placeholder="Digite seu sobrenome" pattern="[A-Za-z]+" title="Aceita somente letras" required>
             </div>
             <div>
-                <label for="email">E-mail</label><input id="email" type="email" placeholder="Digite seu e-mail"
+                <label for="datadenascimento">Data de nascimento </label><input type="date" id="datadenascimento">
+            </div>
+            <div>
+                <label for="email">E-mail </label><input id="email" type="email" placeholder="Digite seu e-mail"
                     required>
-                <label for="password">Senha</label><input id="password" type="password" placeholder="Digite sua senha"
+                <label for="password">Senha </label><input id="password" type="password" placeholder="Digite sua senha"
                     required>
             </div>
             <div>
                 <label for="howdoyoumeet">Como você conheceu a plataforma?</label>
                 <select name="howdoyoumeet" id="howdoyoumeet">
+                    <option value="default">(Selecione uma opção)</option>
                     <option value="google">Google</option>
                     <option value="youtube">Youtube</option>
                     <option value="email">E-mail</option>
@@ -169,6 +189,7 @@
                 <textarea name="description" id="description" cols="30" rows="4"
                     placeholder="Digite sua descrição"></textarea>
             </div>
+            
             <input id="checkbox" type="checkbox" required><label for="checkbox">Aceito os termos e condições.</label>
             <input type="submit" value="Cadastrar">
         </fieldset>

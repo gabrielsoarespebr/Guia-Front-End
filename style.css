@@ -9,6 +9,32 @@ h1, cite{
     text-align: center;
 }
 
+h1{
+    margin-bottom: 0;
+}
+
+cite{
+    margin-bottom: 3rem;
+}
+
+.blocodenotas{
+    background-color: rgb(246, 240, 165);
+    font-size: 80%;
+    padding: 0rem 2rem .3rem 2rem;
+    width: 400px;
+    border: 1px solid rgb(195, 190, 119);
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(194, 194, 194, 0.5);
+}
+
+.titulocentralizado{
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
 .grid1{
     display: grid;
     grid-template-columns: 2fr 2fr;
