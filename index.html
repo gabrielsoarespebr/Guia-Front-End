@@ -133,9 +133,11 @@
     </table>
     <hr>
     <h3>Imagens</h3>
+    <p>Utilizando tag &lt;img&gt;:</p>
     <img src="https://images.france.fr/zeaejvyq9bhj/25W1wmn9yRjMCXlQlE4zZE/2e1cb99db847dbfc6633b1974e8c5718/expo_napol__on_bis.JPG"
         alt="Pintura de Napoleão Bonaparte" class="napoleao">
 
+    <p>Utilizando tag &lt;figure&gt;:</p>
     <figure>
         <img src="https://i.pinimg.com/originals/0e/a2/48/0ea2487a31130b10a7e664f4b0e115ef.jpg"
             alt="Pintura de Napoleão Bonaparte" class="napoleao">
@@ -155,7 +157,7 @@
                     <input type="radio" name="course" id="course" value="fullstack">Full Stack
                 </div>
             </div>
-            
+
             <div>
                 <label for="name">Nome </label><input id="name" type="text" placeholder="Digite seu nome"
                     pattern="[A-Za-z]+" title="Aceita somente letras" required>
@@ -189,11 +191,49 @@
                 <textarea name="description" id="description" cols="30" rows="4"
                     placeholder="Digite sua descrição"></textarea>
             </div>
-            
+
             <input id="checkbox" type="checkbox" required><label for="checkbox">Aceito os termos e condições.</label>
             <input type="submit" value="Cadastrar">
         </fieldset>
     </form>
+    <p>Variedades para a tag &lt;select&gt;</p>
+    <div class="grid1">
+        <form action="#" method="#">
+            <label for="pets">Escolha seu(s) pet(s):</label><br>
+            <select name="backend" id="pets" multiple size="9">
+
+                <optgroup label="Grande porte">
+                    <option value="dog">Cachorro</option>
+                    <option value="cat">Gato</option>
+                </optgroup>
+
+                <optgroup label="Médio porte">
+                    <option value="turtle">Tartaruga</option>
+                    <option value="rabit">Coelho</option>
+                </optgroup>
+
+                <optgroup label="Pequeno porte">
+                    <option value="fish">Peixe</option>
+                    <option value="hasmter">Hamster</option>
+                </optgroup>
+
+            </select>
+        </form>
+
+        <div class="blocodenotas">
+            <dl>
+                <p class="titulocentralizado">Nota:</p>
+                
+                <dt class="bold">Atributo: multiple</dt>
+                <dd>Usuário pode selecionar várias options pressionando Ctrl ou clicando e arrastando o mouse.</dd>
+                <dt class="bold">Atributo: size</dt>
+                <dd>Tamanho de visualização.</dd>
+                <dt class="bold">Tag: &lt;optgroup&gt;</dt>
+                <dd>Agrupa options.</dd>
+
+            </dl>
+        </div>
+    </div>
 
 
 </body>
