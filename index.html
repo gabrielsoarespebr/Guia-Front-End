@@ -490,7 +490,8 @@
         </div>
 
         <h4>5. Footer</h4>
-        <footer style="width:80%;margin:auto;display:flex;align-items:center;justify-content:center;height:8rem;background-color:pink;color:midnightblue">
+        <footer
+            style="width:80%;margin:auto;display:flex;align-items:center;justify-content:center;height:8rem;background-color:pink;color:midnightblue">
             <address>Gabi, 2022<br>Todos os direitos reservados.</address>
         </footer>
     </div>
@@ -498,7 +499,7 @@
     <br>
     <hr>
     <h3>DOM: Document Object Model</h3>
-    <p>Seletores de JavaScript:</p>
+    <p>Selecionando elementos com JavaScript:</p>
     <dl>
         <dt>getElementById()</dt>
         <dd>Retorna <span class="bold">element</span></dd>
@@ -510,6 +511,68 @@
         <dd>Retorna <span class="bold">element</span></dd>
         <dt>querySelectorAll()</dt>
         <dd>Retorna <span class="bold">NodeList</span></dd>
+        <dt>getAttribute()</dt>
+        <dd><br></dd>
+        <dt>.parentNode ou .parentElement</dt>
+        <dd><br></dd>
+
+        <dt>Desconsidera quebra de linha (Enter):</dt>
+        <dt>.children</dt>
+        <dd>Retorna <span class="bold">HTMLCollection</span></dd>
+        <dt>.firstElementChild</dt>
+        <dd><br></dd>
+        <dt>.lastElementChild ou .lastChild</dt>
+        <dd><br></dd>
+        <dt>.nextElementSibling</dt>
+        <dd><br></dd>
+
+        <dt>Considera quebra de linha (Enter) como "text":</dt>
+        <dt>.childNodes</dt>
+        <dd>Retorna <span class="bold">NodeList</span></dd>
+        <dt>.firstChild</dt>
+        <dd><br></dd>
+        <dt>.nextSibling</dt>
+        <dd><br></dd>
+    </dl>
+
+    <p>Manipulando elementos com JavaScript:</p>
+    <dl>
+        <dt>textContent</dt>
+        <dd>algumacoisa.textContent = 'inserindo texto em algumacoisa'</dd>
+        <dt>innerText</dt>
+        <dd>algumacoisa.innerText = 'inserindo texto em algumacoisa'</dd>
+        <dt>innerHTML</dt>
+        <dd>algumacoisa.innerHTML = 'inserindo texto e &lt;span&gt;elementos HTML&lt;/span&gt; em algumacoisa'</dd>
+        <dt>value</dt>
+        <dd>algumacoisa.value = 'adicionando ou trocando o valor da tag algumacoisa'</dd>
+        <dt>setAttribute</dt>
+        <dd>algumacoisa.setAttribute('atributo','valor do atributo')</dd>
+        <dt>removeAttribute</dt>
+        <dd>algumacoisa.removeAttribute('atributo')</dd>
+        <dt>style</dt>
+        <dd>algumacoisa.style.backgroundColor = 'red'</dd>
+    </dl>
+
+    <p>Criando e inserindo elementos no HTML com JavaScript:</p>
+    <dl>
+        <dt>createElement</dt>
+        <dd>const div = document.createElement('div')</dd>
+        <dt>append</dt>
+        <dd>const body = document.querySelector('body')</dd>
+        <dd>body.append(div)</dd>
+        <dt>prepend</dt>
+        <dd>const body = document.querySelector('body')</dd>
+        <dd>body.prepend(div)</dd>
+        <dt>insertBefore</dt>
+        <dd>const body = document.querySelector('body')</dd>
+        <dd>body.insertBefore('div','footer')</dd>
+    </dl>
+
+    <p>Modificando atributos dos elementos HTML com JavaScript:</p>
+    <dl>
+        <dt>classList</dt>
+        <dd>const textCenter = document.querySelector('h1')</dd>
+        <dd>textCenter.classList.add('center')</dd>
     </dl>
 
 </body>
